@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #4a90e2;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #e0e0e0 !important;
+    }
+
+    /* Profile Section */
+    .profile-photo img {
+      width: 100%;
+      height: auto;
+      max-width: 200px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+    .profile-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .profile-card h4 {
+      color: #4a90e2;
+    }
+
+    /* Tabs */
+    .nav-tabs .nav-link {
+      border: none;
+      color: #4a90e2;
+      font-weight: bold;
+    }
+    .nav-tabs .nav-link.active {
+      background-color: #4a90e2;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .tab-content {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Skills Carousel */
+    #skillsCarousel {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    #skillsCarousel .carousel-item img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    #skillsCarousel h6 {
+      color: #4a90e2;
+      font-size: 1.1rem;
+      margin-top: 5px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form input, .contact-form button {
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #4a90e2;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+.edBtn{
+ padding: 15px;
+ margin: 10px;
+
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg shadow p-3 mb-5 ">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Profile Photo Section -->
+      <div class="col-md-3">
+        <div class="profile-photo text-center">
+          <img src="images/WhatsApp Image 2023-11-19 at 11.28.05 AM.jpeg" alt="Profile Photo">
+        </div>
+      </div>
+
+      <!-- Description Section -->
+      <div class="col-md-8 profile-card">
+        <h4>Om Shirudkar</h4>
+        <h2>Full-Stack Web Developer</h2>
+        <p>Versatile Full-Stack Web Developer skilled in both front-end and back-end technologies. Experienced in building full-scale applications from scratch, with expertise in HTML, CSS, JavaScript, and backend languages such as Node.js and PHP. Knowledgeable in database management (MySQL, MongoDB) and server-side frameworks. Passionate about creating efficient and scalable web solutions and implementing best practices to enhance security, performance, and user experience.</p>
+
+        <!-- Tabs Section -->
+        <ul class="nav nav-tabs " id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="edBtn btn btn-light shadow p-3 mb-5"  id="ssc-tab" data-bs-toggle="tab" data-bs-target="#ssc" type="button" role="tab" aria-controls="ssc" aria-selected="true">SSC</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="edBtn btn btn-light shadow p-3 mb-5"  id="hsc-tab" data-bs-toggle="tab" data-bs-target="#hsc" type="button" role="tab" aria-controls="hsc" aria-selected="false">Diploma </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="edBtn btn btn-light shadow p-3 mb-5"  id="be-tab" data-bs-toggle="tab" data-bs-target="#be" type="button" role="tab" aria-controls="be" aria-selected="false">BE</button>
+          </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+          <div class="tab-pane fade show active" id="ssc" role="tabpanel" aria-labelledby="ssc-tab">
+            <div class="d-flex align-items-center">
+    
+              <div class="ms-3">Achieved  65%</div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="hsc" role="tabpanel" aria-labelledby="hsc-tab">
+            <p>Achieved 85% in Diploma in Computer Engineering with Distinction</p>
+          </div>
+          <div class="tab-pane fade" id="be" role="tabpanel" aria-labelledby="be-tab">
+            <p>Bachelor of Engineering with 77% Distinction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section with Carousel -->
+    <h5 class="mt-4">Skill Set</h5>
+    <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex flex-column align-items-center">
+            <img src="./images/java.jpg" alt="Java Logo">
+            <h6>Java</h6>
+            <p class="text-center">Experience with object-oriented programming, multi-threading, and Java frameworks such as Spring and Hibernate.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-column align-items-center">
+            <img src="./images/htmlpng.png" alt="HTML Logo">
+            <h6>HTML</h6>
+            <p class="text-center">Proficient in HTML5, semantic elements, and creating responsive layouts with Bootstrap.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-column align-items-center">
+            <img src="./images/sql.png" alt="SQL Logo">
+            <h6>SQL</h6>
+            <p class="text-center">Experienced in database management, including MySQL and MongoDB, for data-driven applications.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-column align-items-center">
+            <img src="./images/javascript.png" alt="JavaScript Logo">
+            <h6>JavaScript</h6>
+            <p class="text-center">Proficient in JavaScript, including ES6, and frameworks like React for dynamic web applications.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Contact Form and Info -->
+    <div class="row mt-4 ">
+      <div class="col-md-4 contact-form">
+        <h6>Contact Form</h6>
+        <form>
+          <div class="mb-2">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="mb-2">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send</button>
+        </form>
+      </div>
+      <div class="col-md-4 text-center">
+        <button class="btn btn-secondary mt-4 w-75 shadow p-4 mb-5">Download</button>
+      </div>
+      <div class="col-md-4 text-center">
+        <p>Contact No: 8421135800 </p>
+        <p>Email: omshirudkar@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="shadow p-3 mb-5">
+    <p>Designed by Om Shirudkar</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
